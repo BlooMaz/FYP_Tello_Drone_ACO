@@ -48,7 +48,7 @@ def calculate():
 
         # Using ACO calculate the best tour
         num_cities = len(xy_distance)
-        aco = ACO.AntColonyOptimizer(num_ants=100, num_iterations=1000, alpha=1.0, beta=2.0, rho=0.3, q=100,
+        aco = ACO.AntColonyOptimizer(num_ants=1000, num_iterations=1000, alpha=1.0, beta=2.0, rho=0.3, q=100,
                                      distance_matrix=xy_distance)
         aco.optimize()
         end = timer()

@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="Initial commit">
+    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone controller">
+      <change afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telloc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tello_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/tello_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACO.py" beforeDir="false" afterPath="$PROJECT_DIR$/ACO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page2.py" beforeDir="false" afterPath="$PROJECT_DIR$/page2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tello_controller.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +41,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/muhdm/PycharmProjects/pythonProject1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/muhdm/PycharmProjects/pythonProject1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\muhdm\PycharmProjects\pythonProject1" />
@@ -49,8 +59,8 @@
       <recent name="C:\Users\muhdm\PycharmProjects\pythonProject1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tello_controller">
-    <configuration name="Calculate_distance_matrix_4Drones" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.drone_movement">
+    <configuration name="ACO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ACO.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -71,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="FourDronesSplitPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ACOtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FourDronesSplitPage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ACOtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tello_controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="telloc (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tello_controller.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/telloc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="telloc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,7 +177,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\muhdm\PycharmProjects\pythonProject1\telloc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tello_controller" />
         <item itemvalue="Python.drone_movement" />
-        <item itemvalue="Python.FourDronesSplitPage" />
-        <item itemvalue="Python.Calculate_distance_matrix_4Drones" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.ACOtest" />
+        <item itemvalue="Python.ACO" />
+        <item itemvalue="Python.telloc (1)" />
+        <item itemvalue="Python.telloc" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +226,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689320077936</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="drone controller">
+      <created>1689322431811</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689322431811</updated>
+    </task>
+    <task id="LOCAL-00005" summary="drone controller">
+      <created>1689322631007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689322631007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +259,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="drone controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="drone controller" />
   </component>
 </project>
