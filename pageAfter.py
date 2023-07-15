@@ -12,6 +12,14 @@ def startPage():
     root1.title("Image Upload")
     root1.config(bg="#204050")
 
+    # Load the image
+    image23 = Image.open("bgother.png")
+    background_image1 = ImageTk.PhotoImage(image23)
+
+    # Create a Label widget with the image
+    background_label = tk.Label(root1, image=background_image1)
+    background_label.place(x=0, y=0, relwidth=1, relheight=1)
+
     # choose file function and resized the image
     def openFile():
         global image_used
@@ -21,7 +29,7 @@ def startPage():
         imgForpg2_resized = imgForpg2.resize((800, 800), Image.ANTIALIAS)
         imgForpg2 = ImageTk.PhotoImage(imgForpg2_resized)
         my_label = tk.Label(root1)
-        my_label.grid(row=3, column=3,columnspan=3)
+        my_label.grid(row=3, column=2,columnspan=3)
         my_label.image = imgForpg2
         my_label['image'] = imgForpg2
         fh = open('fileAddress.txt', 'w')
@@ -43,8 +51,16 @@ def startPage():
         def GothisPage():
             # to split the image into four segments
             window = tk.Tk()
-            window.geometry("1300x1080")
+            window.geometry("1920x1080")
             window.title("Four Drones")
+
+            # Load the image
+            imagebg = Image.open("bgother.png")
+            background_imagebg = ImageTk.PhotoImage(imagebg)
+
+            # Create a Label widget with the image
+            background_label1 = tk.Label(window, image=background_imagebg)
+            background_label1.place(x=0, y=0, relwidth=1, relheight=1)
 
             # go to coordinateClick window
             def goToCoordinateClick():
@@ -106,7 +122,10 @@ def startPage():
                                     command=goToCoordinateClick,
                                     )
             labelButton.grid(row=3, column=1,columnspan=2)
-
+            window.columnconfigure(0, weight=1)
+            window.columnconfigure(1, weight=0)  # Empty column with weight 0
+            window.columnconfigure(2, weight=0)
+            window.columnconfigure(3, weight=1)
             window.mainloop()
 
         GothisPage()
@@ -120,8 +139,15 @@ def startPage():
         def GothisPage():
             # to split the image into four segments
             window = tk.Tk()
-            window.geometry("1300x1080")
+            window.geometry("1920x1080")
             window.title("Two Drones")
+
+            imagebg = Image.open("bgother.png")
+            background_imagebg = ImageTk.PhotoImage(imagebg)
+
+            # Create a Label widget with the image
+            background_label1 = tk.Label(window, image=background_imagebg)
+            background_label1.place(x=0, y=0, relwidth=1, relheight=1)
 
             # go to coordinateClick window
             def goToCoordinateClick():
@@ -180,22 +206,34 @@ def startPage():
                                     )
             labelButton.grid(row=3, column=1, columnspan=2)
 
+            window.columnconfigure(0, weight=1)
+            window.columnconfigure(1, weight=0)  # Empty column with weight 0
+            window.columnconfigure(2, weight=0)
+            window.columnconfigure(3, weight=1)
+            window.rowconfigure(0, weight=1)
+            window.rowconfigure(1, weight=0)  # Empty row with weight 0
+            window.rowconfigure(2, weight=0)
+            window.rowconfigure(3, weight=0)
+            window.rowconfigure(4, weight=1)
             window.mainloop()
 
         GothisPage()
 
     # upload button image
     btu = Image.open("upload.png")
-    resized_image_up = btu.resize((100, 100), Image.ANTIALIAS)
+    resized_image_up = btu.resize((50, 50), Image.ANTIALIAS)
     new_image_upload = ImageTk.PhotoImage(resized_image_up)
 
     global label
     # using grid from tkinter,pack() sometimes not show image
     labelButton = tk.Button(root1, image=new_image_upload, command=lambda: openFile(), borderwidth=2, bg="#FFFFFF",
                             border=3,padx=30, pady=10)
-    labelButton.grid(row=1, column=1)
+    labelButton.place(x=1200, y=10)
     label = tk.Label(root1, text="Please Upload File", bg="#204050", borderwidth=4,font=("Arial", 34),padx=30, pady=10,fg="#FFFFFF")
     label.grid(row=1, column=2)
+    root1.columnconfigure(0, weight=0)
+    root1.columnconfigure(1, weight=0)  # Empty column with weight 0
+    root1.columnconfigure(2, weight=1)
 
     root1.mainloop()
 

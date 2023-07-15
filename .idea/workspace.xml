@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone controller">
+      <change afterPath="$PROJECT_DIR$/bgother.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordinates3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drone_movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/drone_movement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageAfter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageAfter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +61,7 @@
       <recent name="C:\Users\muhdm\PycharmProjects\pythonProject1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.drone_movement">
+  <component name="RunManager" selected="Python.main">
     <configuration name="ACO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689410140400</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="drone controller">
+      <created>1689411289773</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689411289773</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

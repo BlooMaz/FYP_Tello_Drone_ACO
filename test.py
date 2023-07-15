@@ -10,7 +10,8 @@ def create_figure(coords):
 
 
     # Create a figure and axis
-    fig, ax = plt.subplots()
+
+    fig, ax = plt.subplots(figsize=(14, 12))  # Adjust the width and height as desired
     ax.set_xlim(0, 1000)  # Set X-axis limits
     ax.set_ylim(0, 1000)  # Set Y-axis limits
 
@@ -53,5 +54,3 @@ def create_figure(coords):
     plt.close()
     # Show the final plot
     plt.show()
-    plt.pause(5.0)
-    plt.close()
