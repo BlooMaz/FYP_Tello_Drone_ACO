@@ -5,11 +5,11 @@ import numpy as np
 import time
 import page2
 # Speed of the drone
-# 无人机的速度
+
 S = 60
 # Frames per second of the pygame window display
 # A low number also results in input lag, as input information is processed once per frame.
-# pygame窗口显示的帧数
+
 
 FPS = 120
 
@@ -24,26 +24,24 @@ class FrontEnd(object):
             - A and D: Counter clockwise and clockwise rotations (yaw)
             - W and S: Up and down.
 
-        保持Tello画面显示并用键盘移动它
-        按下ESC键退出
-        操作说明：
-            T：起飞
-            L：降落
-            方向键：前后左右
-            A和D：逆时针与顺时针转向
-            W和S：上升与下降
 
     """
 
     def __init__(self):
         # Init pygame
-        # 初始化pygame
-        pygame.init()
 
-        # Creat pygame window
-        # 创建pygame窗口
+        pygame.init()
+        w_height = 1000
+        w_width = 1800
+        # Create pygame window
+
         pygame.display.set_caption("Tello video stream")
-        self.screen = pygame.display.set_mode([1920, 1080])
+        self.screen = pygame.display.set_mode([w_width ,w_height ])
+
+
+        self.background = pygame.Surface(self.screen.get_size()).convert()
+        self.background.fill((255, 255, 255))
+
 
         # Init Tello object that interacts with the Tello drone
         # 初始化与Tello交互的Tello对象
@@ -69,7 +67,6 @@ class FrontEnd(object):
         self.tello.set_speed(self.speed)
 
         # In case streaming is on. This happens when we quit this program without the escape key.
-        # 防止视频流已开启。这会在不使用ESC键退出的情况下发生。
         self.tello.streamoff()
         self.tello.streamon()
 
@@ -84,12 +81,14 @@ class FrontEnd(object):
                 elif event.type == pygame.QUIT:
                     page2.openpage()
                     should_stop = True
+                    self.tello.end()
                     pygame.quit()
 
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         page2.openpage()
                         should_stop = True
+                        self.tello.end()
                         pygame.quit()
 
                     else:
@@ -100,35 +99,33 @@ class FrontEnd(object):
             if frame_read.stopped:
                 break
 
-            self.screen.fill([0, 0, 0])
+
 
             frame = frame_read.frame
-            # battery n. 电池
+            # battery
             text = "Battery: {}%".format(self.tello.get_battery())
-            cv2.putText(frame, text, (5, 1080 - 5),
+            cv2.putText(frame, text, (5, 700 - 5),
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            frame = cv2.resize(frame, (1800, 1000))
+            #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             frame = np.rot90(frame)
             frame = np.flipud(frame)
 
             frame = pygame.surfarray.make_surface(frame)
-            self.screen.blit(frame, (0, 0))
+            frame_rect = frame.get_rect(center=self.screen.get_rect().center)
+            self.screen.blit(frame, frame_rect)
             pygame.display.update()
 
             time.sleep(1 / FPS)
 
         # Call it always before finishing. To deallocate resources.
-        # 通常在结束前调用它以释放资源
+
         self.tello.end()
 
     def keydown(self, key):
         """ Update velocities based on key pressed
         Arguments:
             key: pygame key
-
-        基于键的按下上传各个方向的速度
-        参数：
-            key：pygame事件循环中的键事件
         """
         if key == pygame.K_UP:  # set forward velocity
             self.for_back_velocity = S
@@ -152,9 +149,6 @@ class FrontEnd(object):
         Arguments:
             key: pygame key
 
-        基于键的松开上传各个方向的速度
-        参数：
-            key：pygame事件循环中的键事件
         """
         if key == pygame.K_UP or key == pygame.K_DOWN:  # set zero forward/backward velocity
             self.for_back_velocity = 0
@@ -174,7 +168,6 @@ class FrontEnd(object):
     def update(self):
         """ Update routine. Send velocities to Tello.
 
-            向Tello发送各方向速度信息
         """
         if self.send_rc_control:
             self.tello.send_rc_control(self.left_right_velocity, self.for_back_velocity,

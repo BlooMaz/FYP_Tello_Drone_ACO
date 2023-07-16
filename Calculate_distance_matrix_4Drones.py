@@ -1,7 +1,7 @@
 import math
 import ACO
 from timeit import default_timer as timer
-import test as ts
+import test4d as ts
 i=0
 #temperary array to store coordinates
 coordinate_temp =[]
@@ -62,7 +62,7 @@ def calculate():
         print("New coordinates: ",coordinate_new)
         print(end - start, "seconds")
 
-        ts.create_figure(coordinate_new)
+        ts.start_plotting(coordinate_new,i)
         # clear both list before next iteration
         xy_distance.clear()
         coordinate.clear()

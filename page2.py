@@ -69,7 +69,7 @@ def openpage():
     buttonc = Button(window, image=new_image1c, height=150, width=150, borderwidth=0, bg="#204050",
                         command=subOpenPage3)
 
-    buttonExit = Button(window, image=new_image1_exit, bg="#FFFFFF", text="Exit", command=window.quit, borderwidth=0)
+    buttonExit = Button(window, image=new_image1_exit, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0)
 
     # display button
     canvas1.create_window(900, 600, anchor="nw", window=buttonStart)

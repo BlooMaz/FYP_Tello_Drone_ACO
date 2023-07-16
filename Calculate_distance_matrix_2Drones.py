@@ -48,7 +48,7 @@ def calculate():
 
         # Using ACO calculate the best tour
         num_cities = len(xy_distance)
-        aco = ACO.AntColonyOptimizer(num_ants=1000, num_iterations=1000, alpha=1.0, beta=2.0, rho=0.3, q=100,
+        aco = ACO.AntColonyOptimizer(num_ants=10, num_iterations=10, alpha=1.0, beta=2.0, rho=0.3, q=100,
                                      distance_matrix=xy_distance)
         aco.optimize()
         end = timer()
@@ -62,7 +62,7 @@ def calculate():
         print("New coordinates: ",coordinate_new)
         print(end - start, "seconds")
 
-        ts.create_figure(coordinate_new)
+        ts.start_plotting(coordinate_new,i)
         # clear both list before next iteration
         xy_distance.clear()
         coordinate.clear()

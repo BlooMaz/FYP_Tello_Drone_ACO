@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone controller">
-      <change afterPath="$PROJECT_DIR$/bgother.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4d.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoordinateClick2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoordinateClick2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drone_movement.py" beforeDir="false" afterPath="$PROJECT_DIR$/drone_movement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_split/paddy_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_split/paddy_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_split/paddy_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_split/paddy_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageAfter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageAfter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page2.py" beforeDir="false" afterPath="$PROJECT_DIR$/page2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telloc.py" beforeDir="false" afterPath="$PROJECT_DIR$/telloc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.telloc" />
         <item itemvalue="Python.drone_movement" />
         <item itemvalue="Python.ACOtest" />
         <item itemvalue="Python.ACO" />
         <item itemvalue="Python.telloc (1)" />
-        <item itemvalue="Python.telloc" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689411289773</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="drone controller">
+      <created>1689448465488</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689448465488</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

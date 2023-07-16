@@ -15,7 +15,7 @@ def create_figure(coords,name):
     fig, ax = plt.subplots(figsize=(12, 12))  # Adjust the width and height as desired
     ax.set_xlim(0, 1000)  # Set X-axis limits
     ax.set_ylim(0, 1000)  # Set Y-axis limits
-    ax.set_title('Simulated movement of drone')
+    ax.set_title('Simulated Movement of Drone')
     ax.set_xlabel('x-axis')
     ax.set_ylabel('y-axis')
 
@@ -53,7 +53,7 @@ def create_figure(coords,name):
             # Check for button press event
 
     plt.close()
-    directory = "figure_2d/"
+    directory = "figure_4d/"
     filename = str(name) + ".png"
     filepath = directory + filename
 
@@ -74,12 +74,12 @@ def start_plotting(coordinates,save):
     window.title("Matplotlib Plot in Tkinter")
     window.geometry("1920x1080")
     # Load the image
-    image23 = Image.open("bgother.png")
-    background_image1 = ImageTk.PhotoImage(image23)
+
+    #imageback= ImageTk.PhotoImage(Image.open("bgother.png"))
 
     # Create a Label widget with the image
-    background_label = tk.Label(window, image=background_image1)
-    background_label.place(x=0, y=0, relwidth=1, relheight=1)
+    #background_label = tk.Label(window, image=imageback)
+    #background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
     # Create a FigureCanvasTkAgg widget and attach the figure to it
     canvas = FigureCanvasTkAgg(create_figure(coordinates,save), master=window)
@@ -88,10 +88,10 @@ def start_plotting(coordinates,save):
     # Pack the canvas widget into the window
     canvas.get_tk_widget().pack()
     # exit button image
-    bts_exit = Image.open("logout.png")
-    resized_image1_exit = bts_exit.resize((100, 100), Image.ANTIALIAS)
-    new_image1_exit = ImageTk.PhotoImage(resized_image1_exit)
-    buttonExit = tk.Button(window, image=new_image1_exit, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0).place(x=1200, y=10)
+    #bts_exit = Image.open("logout.png")
+   # resized_image1_exit = bts_exit.resize((100, 100), Image.ANTIALIAS)
+    #new_image1_exit = ImageTk.PhotoImage(resized_image1_exit)
+    buttonExit = tk.Button(window, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0).place(x=1200, y=10)
 
     # Run the Tkinter event loop
     window.mainloop()
