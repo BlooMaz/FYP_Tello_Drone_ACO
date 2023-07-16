@@ -73,13 +73,14 @@ def start_plotting(coordinates,save):
     window = tk.Tk()
     window.title("Matplotlib Plot in Tkinter")
     window.geometry("1920x1080")
-    # Load the image
 
-    #imageback= ImageTk.PhotoImage(Image.open("bgother.png"))
+    # Load the background image
+    imagebg = ImageTk.PhotoImage(Image.open("bgother.png"))
+
 
     # Create a Label widget with the image
-    #background_label = tk.Label(window, image=imageback)
-    #background_label.place(x=0, y=0, relwidth=1, relheight=1)
+    bg_label = tk.Label(window,image=imagebg)
+    bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
     # Create a FigureCanvasTkAgg widget and attach the figure to it
     canvas = FigureCanvasTkAgg(create_figure(coordinates,save), master=window)
@@ -88,11 +89,10 @@ def start_plotting(coordinates,save):
     # Pack the canvas widget into the window
     canvas.get_tk_widget().pack()
     # exit button image
-    #bts_exit = Image.open("logout.png")
-   # resized_image1_exit = bts_exit.resize((100, 100), Image.ANTIALIAS)
-    #new_image1_exit = ImageTk.PhotoImage(resized_image1_exit)
-    buttonExit = tk.Button(window, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0).place(x=1200, y=10)
+    bts_exit = Image.open("logout.png")
+    resized_image1_exit = bts_exit.resize((50, 50), Image.ANTIALIAS)
+    new_image1_exit = ImageTk.PhotoImage(resized_image1_exit)
+    buttonExit = tk.Button(window, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0,image=new_image1_exit).place(x=1450, y=10)
 
     # Run the Tkinter event loop
     window.mainloop()
-

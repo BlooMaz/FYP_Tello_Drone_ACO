@@ -7,11 +7,13 @@ i=0
 coordinate_temp =[]
 #to store xy value when splitting string from reading lines from txt files
 xy_value = []
-
+import result2drone as rtd
 
 
 
 def calculate():
+    timetaken = []
+    bestlengthlist = []
     for i in range(2):
         start = timer()
         filename = 'coordinates' + str(i) + '.txt'
@@ -62,12 +64,18 @@ def calculate():
         print("New coordinates: ",coordinate_new)
         print(end - start, "seconds")
 
+
+        bestlengthlist.append(aco.best_length)
+        timetaken.append(end - start)
+
+
         ts.start_plotting(coordinate_new,i)
         # clear both list before next iteration
         xy_distance.clear()
         coordinate.clear()
         if i == 1:
             print("All done")
+            rtd.openPage(bestlengthlist,timetaken)
         else:
             print("Continuing...")
             print("  ")

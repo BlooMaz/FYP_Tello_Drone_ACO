@@ -143,6 +143,8 @@ class FrontEnd(object):
             self.yaw_velocity = -S
         elif key == pygame.K_d:  # set yaw clockwise velocity
             self.yaw_velocity = S
+      #  elif key==pygame.K_1: #autonomous movement
+
 
     def keyup(self, key):
         """ Update velocities based on key released

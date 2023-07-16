@@ -11,9 +11,6 @@ import Calculate_distance_matrix_4Drones  as cal
 def CoordinatePicker():
     cord = list()
 
-    def show_popup():
-        messagebox.showinfo("Info", "Press any button after choosing the coordinates")
-    show_popup()
 
     # function to display timport PySimpleGUIhe coordinates of
     # of the points clicked on the image

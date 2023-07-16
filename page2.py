@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 import pageAfter
 import InfoPage
 import telloc
-
+import result2drone as rtd
 
 def openpage():
     def subOpenPage1():
@@ -17,9 +17,10 @@ def openpage():
         InfoPage.openInfopage()
 
     def subOpenPage3():
-        # go to next page which is choose the file image
+
         window.destroy()
         telloc.main()
+
 
     # test image
     fileimg1 = "paddy.jpg"
@@ -37,8 +38,8 @@ def openpage():
     new_image1 = ImageTk.PhotoImage(resized_image1)
 
     # cotroller button image
-    btsc = Image.open("start_button_home.png")
-    resized_image1c = btsc.resize((300, 150), Image.ANTIALIAS)
+    btsc = Image.open("gamepad.png")
+    resized_image1c = btsc.resize((300, 180), Image.ANTIALIAS)
     new_image1c = ImageTk.PhotoImage(resized_image1c)
 
     # exit button image
@@ -66,15 +67,15 @@ def openpage():
                          command=subOpenPage1)
     buttonInfo = Button(window, image=new_image1_info, height=150, width=150, borderwidth=0, bg="#204050",
                          command=subOpenPage2)
-    buttonc = Button(window, image=new_image1c, height=150, width=150, borderwidth=0, bg="#204050",
+    buttonc = Button(window, image=new_image1c, height=180, width=300, borderwidth=0, bg="#204050",
                         command=subOpenPage3)
 
     buttonExit = Button(window, image=new_image1_exit, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0)
 
     # display button
-    canvas1.create_window(900, 600, anchor="nw", window=buttonStart)
-    canvas1.create_window(700, 600, anchor="nw", window=buttonc)
-    canvas1.create_window(500, 600, anchor="nw", window=buttonInfo)
+    canvas1.create_window(1100, 550, anchor="nw", window=buttonStart)
+    canvas1.create_window(750, 550, anchor="nw", window=buttonc)
+    canvas1.create_window(500, 550, anchor="nw", window=buttonInfo)
     canvas1.create_window(1750, 900, anchor="nw", window=buttonExit)
 
     window.mainloop()

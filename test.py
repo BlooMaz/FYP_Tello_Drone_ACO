@@ -89,9 +89,9 @@ def start_plotting(coordinates,save):
     canvas.get_tk_widget().pack()
     # exit button image
     bts_exit = Image.open("logout.png")
-    resized_image1_exit = bts_exit.resize((100, 100), Image.ANTIALIAS)
+    resized_image1_exit = bts_exit.resize((50, 50), Image.ANTIALIAS)
     new_image1_exit = ImageTk.PhotoImage(resized_image1_exit)
-    buttonExit = tk.Button(window, image=new_image1_exit, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0).place(x=1200, y=10)
+    buttonExit = tk.Button(window, image=new_image1_exit, bg="#FFFFFF", text="Exit", command=window.destroy, borderwidth=0).place(x=1450, y=10)
 
     # Run the Tkinter event loop
     window.mainloop()

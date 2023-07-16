@@ -122,6 +122,9 @@ def startPage():
                                     command=goToCoordinateClick,
                                     )
             labelButton.grid(row=3, column=1,columnspan=2)
+            label_text_help = tk.Label(window, text="Press any button after Clicking all the coordinates", fg="white",
+                                       font=("Arial", 24), bg="#204050")
+            label_text_help.grid(row=4, column=1, columnspan=2)
             window.columnconfigure(0, weight=1)
             window.columnconfigure(1, weight=0)  # Empty column with weight 0
             window.columnconfigure(2, weight=0)
@@ -205,6 +208,8 @@ def startPage():
                                     command=goToCoordinateClick,
                                     )
             labelButton.grid(row=3, column=1, columnspan=2)
+            label_text_help = tk.Label(window,text="Press any button after Clicking all the coordinates",fg="white",font=("Arial", 24),bg="#204050")
+            label_text_help.grid(row=4, column=1, columnspan=2)
 
             window.columnconfigure(0, weight=1)
             window.columnconfigure(1, weight=0)  # Empty column with weight 0

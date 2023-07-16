@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone controller">
-      <change afterPath="$PROJECT_DIR$/test4d.py" afterDir="false" />
+    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="result image">
+      <change afterPath="$PROJECT_DIR$/gamepad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result2drone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result4drone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoordinateClick2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoordinateClick2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoordinateClick.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoordinateClick.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coordinates3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page2.py" beforeDir="false" afterPath="$PROJECT_DIR$/page2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageAfter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageAfter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telloc.py" beforeDir="false" afterPath="$PROJECT_DIR$/telloc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4d.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="telloc (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result2drone" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,7 +166,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/telloc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result2drone.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.result2drone" />
         <item itemvalue="Python.telloc" />
         <item itemvalue="Python.drone_movement" />
         <item itemvalue="Python.ACOtest" />
         <item itemvalue="Python.ACO" />
-        <item itemvalue="Python.telloc (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689448465488</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="result image">
+      <created>1689489898429</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689489898429</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +305,7 @@
     </ignored-roots>
     <MESSAGE value="Initial commit" />
     <MESSAGE value="drone controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="drone controller" />
+    <MESSAGE value="result image" />
+    <option name="LAST_COMMIT_MESSAGE" value="result image" />
   </component>
 </project>

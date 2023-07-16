@@ -1,7 +1,8 @@
 import math
 import ACO
 from timeit import default_timer as timer
-import test4d as ts
+import test4 as ts
+import result4drone as rfd
 i=0
 #temperary array to store coordinates
 coordinate_temp =[]
@@ -12,6 +13,8 @@ xy_value = []
 
 
 def calculate():
+    timetaken = []
+    bestlengthlist = []
     for i in range(4):
         start = timer()
         filename = 'coordinates' + str(i) + '.txt'
@@ -62,12 +65,16 @@ def calculate():
         print("New coordinates: ",coordinate_new)
         print(end - start, "seconds")
 
+        bestlengthlist.append(aco.best_length)
+        timetaken.append(end - start)
+
         ts.start_plotting(coordinate_new,i)
         # clear both list before next iteration
         xy_distance.clear()
         coordinate.clear()
         if i == 3:
             print("All done")
+            rfd.openPage(bestlengthlist,timetaken)
         else:
             print("Continuing...")
             print("  ")
