@@ -41,15 +41,15 @@ def openPage(length,time):
         result2_label = tk.Label(root, image=result2).place(x=200, y=560)
         result3_label = tk.Label(root, image=result3).place(x=900, y=560)
 
-        label0_time  = tk.Label(text="Time Taken  :"+ str(time[0]),fg="white",font=("Arial", 24),bg="#204050").place(x=200,y=460)
-        label1_time = tk.Label(text="Time Taken  :"+ str(time[1]), fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=460)
-        label2_time = tk.Label(text="Time Taken  :" + str(time[2]), fg="white", font=("Arial", 24), bg="#204050").place( x=200, y=870)
-        label3_time = tk.Label(text="Time Taken  :" + str(time[3]), fg="white", font=("Arial", 24), bg="#204050").place( x=900, y=870)
+        label0_time  = tk.Label(text="Time Taken  :"+ str(round(time[0],4))+" seconds",fg="white",font=("Arial", 24),bg="#204050").place(x=200,y=455)
+        label1_time = tk.Label(text="Time Taken  :"+ str(round(time[1],4))+" seconds", fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=455)
+        label2_time = tk.Label(text="Time Taken  :" + str(round(time[2],4))+" seconds", fg="white", font=("Arial", 24), bg="#204050").place( x=200, y=870)
+        label3_time = tk.Label(text="Time Taken  :" + str(round(time[3],4))+" seconds", fg="white", font=("Arial", 24), bg="#204050").place( x=900, y=870)
 
-        label0_length = tk.Label(text="Best Length :"+ str(length[0]), fg="white", font=("Arial", 24), bg="#204050").place(x=200, y=510)
-        label1_Length = tk.Label(text="Best Length :"+ str(length[1]), fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=510)
-        label2_length = tk.Label(text="Best Length :" + str(length[2]), fg="white", font=("Arial", 24),bg="#204050").place(x=200, y=920)
-        label3_Length = tk.Label(text="Best Length :" + str(length[3]), fg="white", font=("Arial", 24),bg="#204050").place(x=900, y=920)
+        label0_length = tk.Label(text="Best Length :"+ str(round(length[0],2)), fg="white", font=("Arial", 24), bg="#204050").place(x=200, y=510)
+        label1_Length = tk.Label(text="Best Length :"+ str(round(length[1],2)), fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=510)
+        label2_length = tk.Label(text="Best Length :" + str(round(length[2],2)), fg="white", font=("Arial", 24),bg="#204050").place(x=200, y=920)
+        label3_Length = tk.Label(text="Best Length :" + str(round(length[3],2)), fg="white", font=("Arial", 24),bg="#204050").place(x=900, y=920)
 
         # Home button image
         bthome = Image.open("homeico.png")

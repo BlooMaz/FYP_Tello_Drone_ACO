@@ -137,7 +137,7 @@ coo = [
     [524, 181]
 ]
 num_cities = len(distance_matrix)
-aco = AntColonyOptimizer(num_ants=10, num_iterations=10, alpha=1.0, beta=2.0, rho=0.5, q=100, distance_matrix=distance_matrix)
+aco = AntColonyOptimizer(num_ants=100, num_iterations=100, alpha=1.0, beta=2.0, rho=0.5, q=100, distance_matrix=distance_matrix)
 start = timer()
 aco.optimize()
 

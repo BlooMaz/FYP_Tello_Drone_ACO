@@ -13,7 +13,7 @@ def openInfopage():
     root.title("Info page")
 
     bts_back = Image.open("back.png")
-    resized_image1_back = bts_back.resize((100, 100), Image.ANTIALIAS)
+    resized_image1_back = bts_back.resize((300, 150), Image.ANTIALIAS)
     new_image1_back = ImageTk.PhotoImage(resized_image1_back)
 
     image = Image.open("info.png")
@@ -31,7 +31,7 @@ def openInfopage():
                         bg="#204050",
                         command=backtohome)
 
-    canvas.create_window(1700, 850, anchor="nw", window=buttonback)
+    canvas.create_window(1600, 850, anchor="nw", window=buttonback)
 
     root.mainloop()
 

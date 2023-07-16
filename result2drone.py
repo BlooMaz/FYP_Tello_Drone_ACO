@@ -32,11 +32,11 @@ def openPage(length,time):
         result0_label=tk.Label(root,image=result0).place(x=200,y=200)
         result1_label = tk.Label(root, image=result1).place(x=900, y=200)
 
-        label0_time  = tk.Label(text="Time Taken  :"+ str(time[0]),fg="white",font=("Arial", 24),bg="#204050").place(x=200,y=650)
-        label1_time = tk.Label(text="Time Taken  :"+ str(time[1]), fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=650)
+        label0_time  = tk.Label(text="Time Taken  :"+ str(round(time[0],4))+" seconds",fg="white",font=("Arial", 24),bg="#204050").place(x=200,y=650)
+        label1_time = tk.Label(text="Time Taken  :"+ str(round(time[1],4))+" seconds", fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=650)
 
-        label0_length = tk.Label(text="Best Length :"+ str(length[0]), fg="white", font=("Arial", 24), bg="#204050").place(x=200, y=700)
-        label1_Length = tk.Label(text="Best Length :"+ str(length[1]), fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=700)
+        label0_length = tk.Label(text="Best Length :"+ str(round(length[0],2)), fg="white", font=("Arial", 24), bg="#204050").place(x=200, y=700)
+        label1_Length = tk.Label(text="Best Length :"+ str(round(length[1],2)), fg="white", font=("Arial", 24), bg="#204050").place(x=900, y=700)
 
         # Home button image
         bthome = Image.open("homeico.png")
