@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone autonomous test" />
+    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone movement_test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_split/paddy_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telloc.py" beforeDir="false" afterPath="$PROJECT_DIR$/telloc.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689499958591</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="drone movement_test">
+      <created>1689502295287</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689502295287</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +312,7 @@
     <MESSAGE value="result image" />
     <MESSAGE value="complete with result page" />
     <MESSAGE value="drone autonomous test" />
-    <option name="LAST_COMMIT_MESSAGE" value="drone autonomous test" />
+    <MESSAGE value="drone movement_test" />
+    <option name="LAST_COMMIT_MESSAGE" value="drone movement_test" />
   </component>
 </project>

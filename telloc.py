@@ -43,12 +43,14 @@ class FrontEnd(object):
         self.background.fill((255, 255, 255))
 
 
+
+
         # Init Tello object that interacts with the Tello drone
-        # 初始化与Tello交互的Tello对象
+
         self.tello = Tello()
 
         # Drone velocities between -100~100
-        # 无人机各方向速度在-100~100之间
+
         self.for_back_velocity = 0
         self.left_right_velocity = 0
         self.up_down_velocity = 0
@@ -58,8 +60,25 @@ class FrontEnd(object):
         self.send_rc_control = False
 
         # create update timer
-        # 创建上传定时器
         pygame.time.set_timer(pygame.USEREVENT + 1, 1000 // FPS)
+
+        # Initialize the joystick module
+        pygame.joystick.init()
+
+        # Check the number of connected joysticks
+        joystick_count = pygame.joystick.get_count()
+        if joystick_count == 0:
+            print("No joystick found.")
+            pygame.quit()
+            exit()
+
+        # Initialize the first joystick
+        self.joystick = pygame.joystick.Joystick(0)
+        self.joystick.init()
+
+        # Print the joystick name
+        joystick_name = self.joystick.get_name()
+        print("Joystick name:", joystick_name)
 
     def run(self):
 
@@ -115,6 +134,18 @@ class FrontEnd(object):
             frame_rect = frame.get_rect(center=self.screen.get_rect().center)
             self.screen.blit(frame, frame_rect)
             pygame.display.update()
+
+            # Joystick input handling
+            for i in range(self.joystick.get_numaxes()):
+                axis = self.joystick.get_axis(i)
+                if i == 0:  # Left stick X-axis
+                    self.left_right_velocity = int(axis * S)
+                elif i == 1:  # Left stick Y-axis
+                    self.for_back_velocity = int(axis * S)
+                elif i == 2:  # Right stick X-axis
+                    self.yaw_velocity = int(axis * S)
+                elif i == 3:  # Right stick Y-axis
+                    self.up_down_velocity = int(axis * S)
 
             time.sleep(1 / FPS)
 
