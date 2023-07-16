@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="result image">
-      <change afterPath="$PROJECT_DIR$/gamepad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result2drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result4drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_2Drones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculate_distance_matrix_4Drones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoordinateClick.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoordinateClick.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coordinates0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coordinates1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coordinates2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coordinates3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coordinates3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_split/paddy_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_split/paddy_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image_split/paddy_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page2.py" beforeDir="false" afterPath="$PROJECT_DIR$/page2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageAfter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageAfter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telloc.py" beforeDir="false" afterPath="$PROJECT_DIR$/telloc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4d.py" beforeDir="false" />
-    </list>
+    <list default="true" id="3f951094-a52c-4d49-a58f-fe64a3f86477" name="Changes" comment="drone autonomous test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -285,7 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689489898429</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="complete with result page">
+      <created>1689499873310</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689499873310</updated>
+    </task>
+    <task id="LOCAL-00012" summary="drone autonomous test">
+      <created>1689499958591</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689499958591</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,6 +298,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="drone controller" />
     <MESSAGE value="result image" />
-    <option name="LAST_COMMIT_MESSAGE" value="result image" />
+    <MESSAGE value="complete with result page" />
+    <MESSAGE value="drone autonomous test" />
+    <option name="LAST_COMMIT_MESSAGE" value="drone autonomous test" />
   </component>
 </project>
