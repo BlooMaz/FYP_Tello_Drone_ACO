@@ -15,15 +15,19 @@ def drone_movement():
 
         elif x1 == x2 and y1 > y2:
             tello.move_back(distance)
+            print(" ")
 
         elif x1 == x2 and y1 < y2:
             tello.move_foward(distance)
+            print(" ")
 
         elif y1 == y2 and x1 > x2:
             tello.move_left(distance)
+            print(" ")
 
         elif y1 == y2 and x1 < x2:
             tello.move_right(distance)
+            print(" ")
 
         elif x1 > x2 and y1 > y2:
             dx = x2 - x1
@@ -33,6 +37,9 @@ def drone_movement():
             tello.rotate_counter_clockwise(int(angle))
             time.sleep(1)
             tello.move_forward(distance)
+            tello.rotate_clockwise(int(angle))
+            print(angle)
+            print(" ")
 
         elif x1 > x2 and y1 < y2:
             dx = x2 - x1
@@ -42,6 +49,9 @@ def drone_movement():
             tello.rotate_counter_clockwise(int(angle))
             time.sleep(1)
             tello.move_forward(distance)
+            tello.rotate_clockwise(int(angle))
+            print(angle)
+            print(" ")
 
         elif x1 < x2 and y1 > y2:
             dx = x2 - x1
@@ -51,6 +61,9 @@ def drone_movement():
             tello.rotate_clockwise(int(angle))
             time.sleep(1)
             tello.move_forward(distance)
+            tello.rotate_counter_clockwise(int(angle))
+            print(angle)
+            print(" ")
 
         elif x1 < x2 and y1 < y2:
             dx = x2 - x1
@@ -60,14 +73,20 @@ def drone_movement():
             tello.rotate_clockwise(int(angle))
             time.sleep(1)
             tello.move_forward(distance)
+            tello.rotate_counter_clockwise(int(angle))
+            print(angle)
+            print(" ")
 
     # Define a list of coordinates
     coordinates = [
+        [0,0],
         [20, 70],
         [80, 10],
         [50, 90],
         [30, 40],
-        [70, 60]
+        [70, 60],
+        [70, 100],
+        [0, 0]
     ]
 
     horizontal = 0
@@ -78,7 +97,7 @@ def drone_movement():
         x = coordinates[i][0]
         y = coordinates[i][1]
 
-        if i != len(coordinates) - 1:
+        if i < (len(coordinates) - 1):
             p = [x, y]
             q = [coordinates[i + 1][0], coordinates[i + 1][1]]
             distance1 = math.dist(p, q)
